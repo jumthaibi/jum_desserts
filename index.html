@@ -102,35 +102,7 @@
         height: auto;
     }
     /* مثال لجعل الصورة على اليمين ثابتة داخل div وليست خارجة */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.img_3 {
-  width: 30%;
-  max-width: 300px;
-  height: auto;
-  position: relative; /* بدل absolute */
-  margin-left: 20px;
-}
-
-/* للهواتف */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  .img_3 {
-    width: 80%;
-    margin: 20px auto 0 auto;
-  }
-  /* تصغير الخط */
-  body {
-    font-size: 16px;
-  }
-}
 
 </style>
 <body>
