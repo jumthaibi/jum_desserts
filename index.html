@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,99 +10,146 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        margin: 0;
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
-    .first_img{
-        position: absolute;
-        right: 0px;
-        top: 200px;
+
+    .one {
+      background-color: #748DAE;
+      position: relative;
+      padding-top: 150px;
+      padding-bottom: 100px;
+      overflow: hidden; /* عشان الصور ما تطلع برا */
     }
-    .one{
-        background-color: #748DAE;
-        
-        
+
+    .first_img {
+      position: absolute;
+      right: 0;
+      top: 322px;
+      width: 30%;
+      max-width: 300px;
+      height: auto;
     }
-    .second_img{
-        position: relative;
-        top: 220px;
-        z-index: 3;
+
+    .second_img {
+      position: relative;
+      z-index: 2;
+      top: 160px;
+      right: 420px;
+      width: 250px;
+      display: block;
+      margin: 0 auto;
     }
-    .farawlah1{
-        position: absolute;
-        max-width: 100%;
-        top: 140px;
-        right: 440px;
-        transform: rotate(200deg);
+
+    .farawlah1,
+    .farawlah2 {
+      position: absolute;
+      width: 100px;
+      height: auto;
     }
-    .farawlah2{
-        position: absolute;
-        max-width: 100%;
-        top: 140px;
-        left: 320px;
-        transform: rotate(120deg);
+
+    .farawlah1 {
+      top: 140px;
+      right: 25%;
+      transform: rotate(200deg);
     }
-    .heading{
-        position: relative;
-        bottom: 250px;
-        text-align: center;
-        right: 75px;
+
+    .farawlah2 {
+      top: 140px;
+      left: 25%;
+      transform: rotate(120deg);
     }
-    h1.heading{
-        font-size: 50px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+
+    .heading {
+      position: relative;
+      text-align: center;
+      bottom: 90px;
+      z-index: 3;
+      color: white;
     }
-    p{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    h1.heading {
+      font-size: 50px;
     }
-    p.heading{
-        font-size: 30px;
-        bottom: 225px;
+
+    p.heading {
+      font-size: 30px;
+      margin-top: -10px;
     }
+
     .two {
-        background-color: #F5CBCB;
-        z-index: 1;
-        text-align: center;
-        margin-top: -16px; /* عدلي الرقم حسب حجم الفراغ */
-        padding: 50px; /* عشان المحتوى ما يلصق فوق */
-        position: relative;
-        
+      background-color: #F5CBCB;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: -16px;
     }
 
     .p_two {
-        position: relative;
-        margin-top: 50px;
-        font-size: 20px;
-        color: rgb(199, 71, 114);
-    }   
-    .three{
-        text-align: center;
-        background-color: #FFEAEA;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 20px
+      font-size: 20px;
+      color: rgb(199, 71, 114);
+      margin-top: 20px;
+    }
 
+    .three {
+      text-align: center;
+      background-color: #FFEAEA;
+      padding: 20px;
+      font-size: 20px;
     }
-    .prices{
-        background-color: #9ECAD6;
-    }
-    h2{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .img_3{
-        position: absolute;
-        width: 30%;
-        height: 90%;
-        right: 0; /* خليه داخل الشاشة */
-        top: 90px;
 
+    .prices {
+      background-color: #9ECAD6;
     }
-    .gelly{
-        position: absolute;
-        bottom: -80px;
-        left: 60px;
-        width: 220px;
-        height: auto;
+
+    .img_3 {
+      position: absolute;
+      width: 30%;
+      height: auto;
+      right: 0;
+      top: 843px;
+      max-width: 300px;
+    }
+
+    .gelly {
+      position: absolute;
+      top: 810px;
+      left: 60px;
+      width: 220px;
+      height: auto;
+    }
+
+    /* responsiveness */
+    @media (max-width: 768px) {
+      .first_img,
+      .img_3 {
+        width: 50%;
+        top: 100px;
+      }
+
+      .farawlah1,
+      .farawlah2 {
+        width: 60px;
+      }
+
+      h1.heading {
+        font-size: 30px;
+      }
+
+      p.heading {
+        font-size: 18px;
+      }
+
+      .second_img {
+        width: 180px;
+      }
+
+      .gelly {
+        width: 140px;
+        left: 20px;
+        bottom: -60px;
+      }
     }
 </style>
 <body>
@@ -191,26 +239,11 @@
             </div>
         </div>
         </div>
-        <br>
+        <br><br><br>
     </div>
 
 </div>
     </div>
-<div class="three" style="color: rgb(128, 0, 21);">
-    
-        <p>for contact</p>
-        <br>
-        <div class="inside_3" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
-            <p style="margin: 0;">
-                <img src="instagram.png" width="20" height="20">
-                <a href="#" style="text-decoration: none; color: rgb(128, 0, 21);">Jum_desserts</a>
-            </p>
-            <p style="margin: 0;">
-                <img src="social-media.png" width="20" height="20">
-                <a href="#" style="text-decoration: none; color: rgb(128, 0, 21);">Jum desserts</a>
-            </p>
-        </div>
-        <br><br>
-</div>
+
 </body>
 </html>
